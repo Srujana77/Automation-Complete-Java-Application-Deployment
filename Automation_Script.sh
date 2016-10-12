@@ -23,6 +23,9 @@ WEB_XML_URL=https://raw.githubusercontent.com/Srujana77/Test/master/web.xml
 WEB_XML_FILE=web.xml
 WEB_XML_FILE_LOC=$TOMCAT/webapps/petclinic/WEB-INF/
 
+JDBC_FILE=/usr/share/java/mysql-connector-java.jar
+JDBC_FILE_LOC=$TOMCAT/lib/
+
 ####Download Tomcat tarfile
 if [ ! -e $TOMCAT ]; then
     if [ ! -r $TOMCAT_ARCHIVE ]; then
@@ -86,7 +89,15 @@ fi
 
 
 #Configure mysql with tomcat
-export CLASSPATH=$CLASSPATH:/usr/share/java/mysql-connector-java.jar
+#export CLASSPATH=$CLASSPATH:/usr/share/java/mysql-connector-java.jar
+
+#Copy Mysql Connector to tomcat library
+
+if [ ! -r $JDBC_FILE ]; then
+    echo "$JDBC_FILE is missing. Download it and run this again to deploy it." 1>&2
+else
+    cp $JDBC_FILE $JDBC_FILE_LOC
+fi
 
 ###Download server xml file
 if [ -n "$(which curl)" ]; then
@@ -98,7 +109,7 @@ fi
 #Copy server xml to tomcat configuration
 
 if [ ! -r $SERVER_XML_FILE ]; then
-    echo "$WAR_FILE is missing. Download it and run this again to deploy it." 1>&2
+    echo "$SERVER_XML_FILE is missing. Download it and run this again to deploy it." 1>&2
 else
     cp $SERVER_XML_FILE $SERVER_XML_FILE_LOC
 fi
@@ -114,7 +125,7 @@ fi
 #Copy server xml to tomcat configuration
 
 if [ ! -r $WEB_XML_FILE ]; then
-    echo "$WAR_FILE is missing. Download it and run this again to deploy it." 1>&2
+    echo "$WEB_XML_FILE is missing. Download it and run this again to deploy it." 1>&2
 else
     cp $WEB_XML_FILE $WEB_XML_FILE_LOC
 fi
