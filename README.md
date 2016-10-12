@@ -24,4 +24,4 @@ This is an automation script to do the following process and result in a complet
 
 #How to :-
 
-            -> Run Automation_Script.sh in the deployment servers with root access.
+            -> Run Automation_Script.sh in the deployment servers as root user.
