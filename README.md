@@ -23,4 +23,5 @@ Supporting Files:
             -> web.xml    :- Contains the application specific information
 
 How to:
+
             -> Run Automation_Script.sh in the deployment servers with root access.                                                                 
