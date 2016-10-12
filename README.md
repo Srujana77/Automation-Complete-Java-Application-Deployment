@@ -24,4 +24,4 @@ Supporting Files:
 
 How to:
 
-            -> Run Automation_Script.sh in the deployment servers with root access.                                                     
+            -> Run Automation_Script.sh in the deployment servers with root access.
