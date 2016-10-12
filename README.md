@@ -16,7 +16,6 @@ Assumptions:
 
             -> java jdk or jre is installed.
             -> libmysql-java package installed
-            -> Running the script in the deployment server with admin rights
 
 Supporting Files:
             
@@ -24,4 +23,4 @@ Supporting Files:
             -> web.xml    :- Contains the application specific information
 
 How to:
-            -> Run Automation_Script.sh in the deployment servers with root access.                                                             
+            -> Run Automation_Script.sh in the deployment servers with root access.                                                                 
