@@ -12,7 +12,6 @@ General:
             6.    Configure the application with database.
             7.    Start the server.
 
-
 Assumptions:
 
             -> java jdk or jre is installed.
@@ -23,3 +22,6 @@ Supporting Files:
             
             -> server.xml :- Contains the database server and connection information
             -> web.xml    :- Contains the application specific information
+
+How to:
+            -> Run Automation_Script.sh in the deployment servers with root access.                                                             
