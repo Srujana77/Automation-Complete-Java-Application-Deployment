@@ -2,7 +2,7 @@
 
 #General :-
 
-            This is an automation script to do the following process and result in a complete deployment of a petclinic application (a simple java web application).
+This is an automation script to do the following process and result in a complete deployment of a petclinic application (a simple java web application).
           
             1.    Install Tomcat Server.
             2.    Configure Tomcat Server to start with http port as 80.
