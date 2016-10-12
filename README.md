@@ -10,7 +10,7 @@ General:
             4.    Reset mysql root user password to welcome1 and run the provided Sql Script.
             5.    Deploy the given Application on tomcat.
             6.    Configure the application with database.
-            7.     Start the server.
+            7.    Start the server.
 
 
 Assumptions:
