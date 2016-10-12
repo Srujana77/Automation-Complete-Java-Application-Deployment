@@ -15,9 +15,9 @@ General:
 
 Assumptions:
 
-            java jdk or jre is installed.
-            libmysql-java package installed
-            Running the script in the deployment server with admin rights
+            -> java jdk or jre is installed.
+            -> libmysql-java package installed
+            -> Running the script in the deployment server with admin rights
 
 Supporting Files:
             
